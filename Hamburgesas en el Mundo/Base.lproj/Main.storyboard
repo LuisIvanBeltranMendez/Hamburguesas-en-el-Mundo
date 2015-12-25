@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamburgesas_en_el_Mundo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDd-Jr-g5D">
+                                <rect key="frame" x="16" y="98" width="288" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburgesa:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovt-d3-ExV">
+                                <rect key="frame" x="87" y="147" width="140" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pais:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llN-We-nde">
+                                <rect key="frame" x="132" y="61" width="54" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8t-pf-kuN">
+                                <rect key="frame" x="16" y="182" width="292" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYI-Rh-Mjx">
+                                <rect key="frame" x="42" y="276" width="236" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Quiero una hamburguesa!">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.9490196704864502" blue="0.84705889225006104" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="MostrarMensaje" destination="BYZ-38-t0r" eventType="touchUpInside" id="CIu-DR-lZG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ovt-d3-ExV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="71" id="39x-hk-PTe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ovt-d3-ExV" secondAttribute="trailing" constant="77" id="7VK-1n-lql"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="llN-We-nde" secondAttribute="trailing" constant="118" id="8ES-GY-Cbk"/>
+                            <constraint firstItem="EDd-Jr-g5D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8VP-LB-bzD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="llN-We-nde" secondAttribute="bottom" constant="480" id="9Im-HI-kOa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VYI-Rh-Mjx" secondAttribute="bottom" constant="257" id="Eof-zU-1k2"/>
+                            <constraint firstItem="T8t-pf-kuN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="GDJ-6a-6s7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="T8t-pf-kuN" secondAttribute="bottom" constant="341" id="JeP-el-t4V"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EDd-Jr-g5D" secondAttribute="bottom" constant="429" id="M4P-WD-7MC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VYI-Rh-Mjx" secondAttribute="trailing" constant="26" id="Rld-wj-h9U"/>
+                            <constraint firstItem="Ovt-d3-ExV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="127" id="Twy-qp-ybn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="T8t-pf-kuN" secondAttribute="trailing" constant="-4" id="Wiu-c7-ONQ"/>
+                            <constraint firstItem="llN-We-nde" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="116" id="Zn5-Bl-p4M"/>
+                            <constraint firstItem="EDd-Jr-g5D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="78" id="Zsp-FZ-KQi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ovt-d3-ExV" secondAttribute="bottom" constant="394" id="ahd-J1-hbR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EDd-Jr-g5D" secondAttribute="trailing" id="am1-Ky-pG9"/>
+                            <constraint firstItem="VYI-Rh-Mjx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="256" id="bKV-9l-5P8"/>
+                            <constraint firstItem="VYI-Rh-Mjx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="26" id="fbH-Tm-DyB"/>
+                            <constraint firstItem="T8t-pf-kuN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="162" id="nrM-hk-6fl"/>
+                            <constraint firstItem="llN-We-nde" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="vKR-bS-7cs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="NombreHamburgesa" destination="T8t-pf-kuN" id="uJl-20-vA5"/>
+                        <outlet property="NombrePais" destination="EDd-Jr-g5D" id="NI9-Vr-fqT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204" y="293"/>
+        </scene>
+    </scenes>
+</document>
